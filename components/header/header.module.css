@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'acumin';
+    src: url("../../public/fonts/AcuminVariableConcept.otf") format("opentype");
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.headerBg {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbarContainer {
+    height: 100%;
+    width: 800px;
+}
+
+.navbarContainer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbarItem {
+    padding: 5px;
+}
+
+.navbarItem:hover {
+    cursor: pointer;
+    color: rgb(211, 211, 211);
+    border-bottom: 2px solid white;
+}
+
+.navbarItem span {
+    font-size: 20px;
+    font-family: 'acumin';
+}
+
+.icon {
+    display: none;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        background-color: rgba(0, 0, 0);
+    }
+
+    .headerBg {
+        background-color: rgba(0, 0, 0);
+    }
+
+    .navbarContainer {
+        position: fixed;
+        right: 0;
+        top: 7vh;
+        height: 93vh;
+        width: 150px;
+        background-color: black;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .navbarContainer ul {
+        height: 70%;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .navbarItem {
+        padding: 0px;
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+
+    .icon {
+        display: block;
+    }
+}

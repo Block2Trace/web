@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'cera';
+    src: url("../../public/fonts/Fontspring-DEMO-ceraroundpro-light.otf") format("opentype");
+}
+
+.footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.content hr {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.privacyContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.privacyContainer span {
+    font-family: 'cera';
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .content {
+        width: 90%;
+    }
+
+    .logoContainer {
+        width: 100px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .privacyContainer span {
+        font-size: 16px;
+    }
+
+}

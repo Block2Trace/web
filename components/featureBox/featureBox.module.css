@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@200&display=swap');
+
+@font-face {
+    font-family: 'acumin';
+    src: url("../../public/fonts/AcuminVariableConcept.otf") format("opentype");
+}
+
+.box {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+}
+
+.feature {
+    width: 110px;
+}
+
+.featureTitle {
+    font-family: 'acumin';
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.featureText {
+    line-height: 22px;
+    font-family: 'niramit';
+    font-size: 19px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .feature {
+        width: 80px;
+    }
+
+    .featureTitle {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .featureText {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .featureText {
+        font-size: 16px;
+    }
+
+    .box {
+        width: 280px;
+        padding: 0;
+    }
+
+}

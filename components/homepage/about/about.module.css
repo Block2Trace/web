@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@200&display=swap');
+
+@font-face {
+    font-family: 'acumin';
+    src: url("../../../public/fonts/AcuminVariableConcept.otf") format("opentype");
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.title {
+    color: rgb(119, 255, 171);
+    font-family: 'acumin';
+    font-size: 66px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-family: 'acumin';
+    color: rgb(119, 255, 171);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-family: 'niramit';
+    font-size: 19px;
+}
+
+.imageAll {
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer {
+    width: 1000px;
+    height: auto;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .content {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+}
